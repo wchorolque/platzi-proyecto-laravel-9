@@ -23,7 +23,15 @@
                         <tr class="border-b border-gray-200 text-sm">
                             <td class="px-6 py-4">{{ $post->title }}</td>
                             <td class="px-6 py-4"><a href="" class="text-indigo-600">editar</a></td>
-                            <td class="px-6 py-4"><a href="" class="text-indigo-600">eliminar</a></td>
+                            <td class="px-6 py-4">
+                                <form action="{{ route('posts.destroy', $post) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <input type="submit" value="Eliminar" 
+                                        class="bg-gray-800 text-white rounded px-4 py-2"
+                                        onclick="return confirm('Desea Eliminar?')" />
+                                </form>
+                            </td>
                         </tr>
                         @endforeach
                     </tbody>
