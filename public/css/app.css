@@ -668,6 +668,9 @@ select {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -727,6 +730,9 @@ select {
 }
 .h-12 {
   height: 3rem;
+}
+.h-px {
+  height: 1px;
 }
 .h-16 {
   height: 4rem;
@@ -971,6 +977,10 @@ select {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1117,6 +1127,9 @@ select {
 }
 .opacity-100 {
   opacity: 1;
+}
+.opacity-60 {
+  opacity: 0.6;
 }
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
